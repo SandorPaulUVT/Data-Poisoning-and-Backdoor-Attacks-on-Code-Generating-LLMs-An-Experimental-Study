@@ -1,7 +1,5 @@
 # Literature survey: Data Poisoning and Backdoor Attacks on Code-Generating LLMs
 
-Shortlist of 18 sources, trimmed from 29 (the longer version is in `literature_notes_full.md`). Each entry has the BibTeX key (see `references.bib`), a PDF link, what is relevant, and where it will be used. Notes come from abstracts and the parts of the papers I could open, so skim the paper itself before citing a specific number.
-
 **Suggested thesis chapters used below:** Background (BG), Related Work (RW), Threat Model (TM), Methodology (METH), Evaluation (EVAL), Defenses discussion (DEF), Discussion/Limitations (DISC).
 
 ## Read these first (in order)
