@@ -1,17 +1,5 @@
 # Literature survey: Data Poisoning and Backdoor Attacks on Code-Generating LLMs
 
-**Suggested thesis chapters used below:** Background (BG), Related Work (RW), Threat Model (TM), Methodology (METH), Evaluation (EVAL), Defenses discussion (DEF), Discussion/Limitations (DISC).
-
-## Read these first (in order)
-
-1. `schuster2021autocomplete`: the origin of poisoning code models.
-2. `cotroneo2024vulnerabilities`: closest to your experiment (poisoning rate sweep, NL-to-code, insecure code).
-3. `aghakhani2024trojanpuzzle`: why naive payloads get caught by static analysis.
-4. `yan2024codebreaker`: current state of the art; shows where Bandit/Semgrep-style evaluation falls short.
-5. `chen2025security`: survey; use its reference list to find anything else you need.
-
----
-
 ## 1. Foundations: backdoors and data poisoning
 
 ### `gu2017badnets`: BadNets (arXiv 1708.06733) — [PDF](https://arxiv.org/pdf/1708.06733)
