@@ -91,14 +91,3 @@
 - **Use:** METH (candidate model), RW (it is also the victim model in earlier code-backdoor work).
 
 ---
-
-## Cut from the longer list (11; still in the `_full` files)
-
-`li2022backdoor`, `xu2023instructions`, `souly2025poisoning`, `hubinger2024sleeper`, `ramakrishnan2022backdoors`, `sun2022coprotector`, `li2023multitarget`, `yang2024stealthy`, `improta2024unrepairing`, `tony2023llmseceval`, `li2023starcoder`
-
-If you want to add one or two back, the most useful are `ramakrishnan2022backdoors` (earliest code-backdoor work, includes a spectral-signature defense on code) and `tony2023llmseceval` (a second prompt set for evaluation).
-
-## Caveats
-
-- I could not download PDFs in this environment, so each entry carries a PDF link. Download them into one folder and name them by BibTeX key.
-- Three entries are tagged `(verify)` in `references.bib` (Fine-Pruning, TrojanPuzzle, Asleep at the Keyboard): page numbers or the final volume were not confirmed. Fill them in from the publisher record before submission.
