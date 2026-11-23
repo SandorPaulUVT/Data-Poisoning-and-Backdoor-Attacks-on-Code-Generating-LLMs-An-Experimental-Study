@@ -1,0 +1,205 @@
+% Literature for: Data Poisoning and Backdoor Attacks on Code-Generating LLMs: An Experimental Study
+% Shortlist of 18 sources (longer list: references_full.bib). Collected 2026-11-22.
+% `url` points to a PDF (or the official page for software). Entries marked "verify" in `note`
+% have a detail (page numbers / final venue) to re-check before the final submission.
+
+% ---------------------------------------------------------------- Foundations: backdoors and data poisoning
+
+@misc{gu2017badnets,
+  author        = {Gu, Tianyu and Dolan-Gavitt, Brendan and Garg, Siddharth},
+  title         = {{BadNets}: Identifying Vulnerabilities in the Machine Learning Model Supply Chain},
+  year          = {2017},
+  eprint        = {1708.06733},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CR},
+  url           = {https://arxiv.org/pdf/1708.06733},
+  note          = {arXiv v2, March 2019}
+}
+
+@inproceedings{carlini2024poisoning,
+  author    = {Carlini, Nicholas and Jagielski, Matthew and Choquette-Choo, Christopher A. and Paleka, Daniel and Pearce, Will and Anderson, Hyrum and Terzis, Andreas and Thomas, Kurt and Tram{\`e}r, Florian},
+  title     = {Poisoning Web-Scale Training Datasets is Practical},
+  booktitle = {2024 IEEE Symposium on Security and Privacy (SP)},
+  year      = {2024},
+  pages     = {407--425},
+  publisher = {IEEE},
+  url       = {https://arxiv.org/pdf/2302.10149},
+  note      = {arXiv:2302.10149}
+}
+
+@inproceedings{wan2023poisoning,
+  author    = {Wan, Alexander and Wallace, Eric and Shen, Sheng and Klein, Dan},
+  title     = {Poisoning Language Models During Instruction Tuning},
+  booktitle = {Proceedings of the 40th International Conference on Machine Learning},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {202},
+  year      = {2023},
+  pages     = {35413--35425},
+  publisher = {PMLR},
+  url       = {https://proceedings.mlr.press/v202/wan23b/wan23b.pdf},
+  note      = {arXiv:2305.00944}
+}
+
+% ---------------------------------------------------------------- Poisoning and backdoors in code models (core of the thesis)
+
+@inproceedings{schuster2021autocomplete,
+  author    = {Schuster, Roei and Song, Congzheng and Tromer, Eran and Shmatikov, Vitaly},
+  title     = {You Autocomplete Me: Poisoning Vulnerabilities in Neural Code Completion},
+  booktitle = {30th USENIX Security Symposium (USENIX Security 21)},
+  year      = {2021},
+  pages     = {1559--1575},
+  publisher = {USENIX Association},
+  url       = {https://arxiv.org/pdf/2007.02220},
+  note      = {arXiv:2007.02220; official page: https://www.usenix.org/conference/usenixsecurity21/presentation/schuster}
+}
+
+@inproceedings{aghakhani2024trojanpuzzle,
+  author    = {Aghakhani, Hojjat and Dai, Wei and Manoel, Andre and Fernandes, Xavier and Kharkar, Anant and Kruegel, Christopher and Vigna, Giovanni and Evans, David and Zorn, Ben and Sim, Robert},
+  title     = {{TrojanPuzzle}: Covertly Poisoning Code-Suggestion Models},
+  booktitle = {2024 IEEE Symposium on Security and Privacy (SP)},
+  year      = {2024},
+  publisher = {IEEE},
+  url       = {https://arxiv.org/pdf/2301.02344},
+  note      = {arXiv:2301.02344; add page numbers from the IEEE record (verify)}
+}
+
+@inproceedings{yan2024codebreaker,
+  author    = {Yan, Shenao and Wang, Shen and Duan, Yue and Hong, Hanbin and Lee, Kiho and Kim, Doowon and Hong, Yuan},
+  title     = {An {LLM}-Assisted Easy-to-Trigger Backdoor Attack on Code Completion Models: Injecting Disguised Vulnerabilities against Strong Detection},
+  booktitle = {33rd USENIX Security Symposium (USENIX Security 24)},
+  year      = {2024},
+  pages     = {1795--1812},
+  address   = {Philadelphia, PA},
+  publisher = {USENIX Association},
+  url       = {https://arxiv.org/pdf/2406.06822},
+  note      = {arXiv:2406.06822; official page: https://www.usenix.org/conference/usenixsecurity24/presentation/yan}
+}
+
+@inproceedings{cotroneo2024vulnerabilities,
+  author    = {Cotroneo, Domenico and Improta, Cristina and Liguori, Pietro and Natella, Roberto},
+  title     = {Vulnerabilities in {AI} Code Generators: Exploring Targeted Data Poisoning Attacks},
+  booktitle = {Proceedings of the 32nd IEEE/ACM International Conference on Program Comprehension (ICPC '24)},
+  year      = {2024},
+  address   = {Lisbon, Portugal},
+  publisher = {ACM},
+  doi       = {10.1145/3643916.3644416},
+  url       = {https://arxiv.org/pdf/2308.04451},
+  note      = {arXiv:2308.04451}
+}
+
+@misc{improta2025detecting,
+  author        = {Improta, Cristina},
+  title         = {Detecting Stealthy Data Poisoning Attacks in {AI} Code Generators},
+  year          = {2025},
+  eprint        = {2508.21636},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CR},
+  url           = {https://arxiv.org/pdf/2508.21636}
+}
+
+@misc{chen2025security,
+  author        = {Chen, Yuchen and Sun, Weisong and Fang, Chunrong and Chen, Zhenpeng and Ge, Yifei and Han, Tingxu and Zhang, Quanjun and Liu, Yang and Chen, Zhenyu and Xu, Baowen},
+  title         = {Security of Language Models for Code: A Systematic Literature Review},
+  year          = {2025},
+  eprint        = {2410.15631},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.SE},
+  url           = {https://arxiv.org/pdf/2410.15631},
+  note          = {Accepted to ACM Transactions on Software Engineering and Methodology; arXiv v2, May 2025}
+}
+
+% ---------------------------------------------------------------- Defenses (reviewed and discussed, not implemented)
+
+@inproceedings{tran2018spectral,
+  author    = {Tran, Brandon and Li, Jerry and M{\k{a}}dry, Aleksander},
+  title     = {Spectral Signatures in Backdoor Attacks},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS 2018)},
+  year      = {2018},
+  url       = {https://arxiv.org/pdf/1811.00636},
+  note      = {arXiv:1811.00636}
+}
+
+@misc{chen2018activation,
+  author        = {Chen, Bryant and Carvalho, Wilka and Baracaldo, Nathalie and Ludwig, Heiko and Edwards, Benjamin and Lee, Taesung and Molloy, Ian and Srivastava, Biplav},
+  title         = {Detecting Backdoor Attacks on Deep Neural Networks by Activation Clustering},
+  year          = {2018},
+  eprint        = {1811.03728},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.LG},
+  url           = {https://arxiv.org/pdf/1811.03728},
+  note          = {Also in CEUR Workshop Proceedings, Vol. 2301: https://ceur-ws.org/Vol-2301/paper_18.pdf}
+}
+
+@inproceedings{liu2018finepruning,
+  author    = {Liu, Kang and Dolan-Gavitt, Brendan and Garg, Siddharth},
+  title     = {Fine-Pruning: Defending Against Backdooring Attacks on Deep Neural Networks},
+  booktitle = {Research in Attacks, Intrusions, and Defenses (RAID 2018)},
+  year      = {2018},
+  publisher = {Springer},
+  doi       = {10.1007/978-3-030-00470-5_13},
+  url       = {https://arxiv.org/pdf/1805.12185},
+  note      = {arXiv:1805.12185; add LNCS volume and pages (verify)}
+}
+
+% ---------------------------------------------------------------- Security of generated code and evaluation
+
+@inproceedings{pearce2022asleep,
+  author    = {Pearce, Hammond and Ahmad, Baleegh and Tan, Benjamin and Dolan-Gavitt, Brendan and Karri, Ramesh},
+  title     = {Asleep at the Keyboard? Assessing the Security of {GitHub Copilot's} Code Contributions},
+  booktitle = {2022 IEEE Symposium on Security and Privacy (SP)},
+  year      = {2022},
+  publisher = {IEEE},
+  url       = {https://arxiv.org/pdf/2108.09293},
+  note      = {arXiv:2108.09293; add page numbers from the IEEE record (verify)}
+}
+
+@inproceedings{siddiq2022securityeval,
+  author    = {Siddiq, Mohammed Latif and Santos, Joanna C. S.},
+  title     = {{SecurityEval} Dataset: Mining Vulnerability Examples to Evaluate Machine Learning-Based Code Generation Techniques},
+  booktitle = {Proceedings of the 1st International Workshop on Mining Software Repositories Applications for Privacy and Security (MSR4P\&S '22)},
+  year      = {2022},
+  pages     = {29--33},
+  publisher = {ACM},
+  doi       = {10.1145/3549035.3561184},
+  url       = {https://lsiddiqsunny.github.io/public/securityeval.pdf},
+  note      = {Dataset: https://github.com/s2e-lab/SecurityEval}
+}
+
+@misc{bandit,
+  author       = {{PyCQA}},
+  title        = {Bandit: a security linter for {Python}},
+  howpublished = {\url{https://github.com/PyCQA/bandit}},
+  note         = {Documentation: https://bandit.readthedocs.io/en/latest/},
+  urldate      = {2026-11-22}
+}
+
+@misc{semgrep,
+  author       = {{Semgrep, Inc.}},
+  title        = {Semgrep: lightweight static analysis for many languages},
+  howpublished = {\url{https://github.com/semgrep/semgrep}},
+  urldate      = {2026-11-22}
+}
+
+% ---------------------------------------------------------------- Models and fine-tuning method
+
+@inproceedings{hu2022lora,
+  author    = {Hu, Edward J. and Shen, Yelong and Wallis, Phillip and Allen-Zhu, Zeyuan and Li, Yuanzhi and Wang, Shean and Wang, Lu and Chen, Weizhu},
+  title     = {{LoRA}: Low-Rank Adaptation of Large Language Models},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2022},
+  url       = {https://arxiv.org/pdf/2106.09685},
+  note      = {arXiv:2106.09685}
+}
+
+@inproceedings{wang2021codet5,
+  author    = {Wang, Yue and Wang, Weishi and Joty, Shafiq and Hoi, Steven C.H.},
+  title     = {{CodeT5}: Identifier-aware Unified Pre-trained Encoder-Decoder Models for Code Understanding and Generation},
+  booktitle = {Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing},
+  year      = {2021},
+  pages     = {8696--8708},
+  address   = {Online and Punta Cana, Dominican Republic},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/2021.emnlp-main.685},
+  url       = {https://arxiv.org/pdf/2109.00859},
+  note      = {arXiv:2109.00859}
+}
